@@ -116,7 +116,8 @@ h3{font-size:24px;line-height:1.2}
 /* about */
 .about{display:flex;flex-wrap:wrap;gap:40px;align-items:flex-start}
 .photo{flex:0 1 260px;width:260px;height:300px;border:2px dashed #9A9578;border-radius:10px;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;font-size:14px;color:var(--muted)}
-.photo img{width:100%;height:100%;object-fit:cover;border-radius:8px}
+.photo.has-img{border:0;padding:0}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:50% 20%;border-radius:10px}
 .about-text{flex:999 1 420px;min-width:0;display:flex;flex-direction:column;gap:16px}
 .about-text p{margin:0;font-size:17px;line-height:1.6}
 .path .step{border-top-color:var(--teal)}
@@ -299,8 +300,7 @@ h3{font-size:24px;line-height:1.2}
 <section id="about">
   <div class="wrap">
     <div class="about">
-      <!-- To add your headshot: replace this div's text with <img src="headshot.jpg" alt="Liam Hanvey"> -->
-      <div class="photo">Add your headshot here</div>
+      <div class="photo has-img"><img src="headshot.jpg" alt="Liam Hanvey" width="260" height="300"></div>
       <div class="about-text">
         <p class="eyebrow" style="margin:0">About</p>
         <h2>I understand the whole funnel, because I've worked every part of it.</h2>
