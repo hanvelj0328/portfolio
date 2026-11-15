@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Liam Hanvey | Sales and Marketing</title>
+<meta name="description" content="Marketing leader turned top-ranked outbound seller. #1 of 26, ~$1.2M ARR closed, 281 meetings booked with CEOs.">
+<!-- Hidden from search engines while you finish. Delete this line when you're ready to go public. -->
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F6F4EE; --card:#FFFFFF; --line:#CFCAB8; --ink:#14213D; --muted:#44506A;
+  --teal:#0F5A6B; --teal-dark:#0B3C49; --teal-mid:#14788F; --orange:#C2410C; --orange-text:#9A3412;
+  --display:'Space Grotesk','Inter',system-ui,sans-serif; --body:'Inter',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);line-height:1.5}
+a{color:var(--teal)}
+a:hover{color:var(--ink)}
+:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+section{padding:72px 0}
+.band{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--orange-text);margin:0 0 12px}
+h1,h2,h3{font-family:var(--display);color:var(--ink);margin:0}
+h1{font-size:clamp(40px,7vw,76px);line-height:1.04;letter-spacing:-.025em;max-width:900px}
+h2{font-size:clamp(32px,5vw,48px);line-height:1.1;letter-spacing:-.02em}
+h3{font-size:24px;line-height:1.2}
+.lead{font-size:20px;line-height:1.55;color:var(--muted);max-width:720px;margin:0}
+.small{font-size:13px;color:var(--muted);line-height:1.5}
+
+/* nav */
+.nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding-top:24px;padding-bottom:0}
+.brand{font-family:var(--display);font-weight:700;font-size:22px;color:var(--ink);text-decoration:none}
+.nav nav{display:flex;flex-wrap:wrap;align-items:center;gap:4px 20px}
+.nav nav a{font-size:15px;font-weight:500;color:var(--ink);text-decoration:none;padding:12px 0}
+.nav nav a.cta{font-weight:600;color:#fff;background:var(--ink);padding:12px 20px;border-radius:8px}
+
+/* buttons */
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;font-size:16px;font-weight:600;text-decoration:none;padding:14px 26px;border-radius:8px;border:2px solid transparent}
+.btn.primary{background:var(--orange);color:#fff}
+.btn.primary:hover{background:var(--orange-text);color:#fff}
+.btn.ghost{border-color:var(--ink);color:var(--ink);padding:12px 26px}
+.btn.ghost:hover{background:var(--ink);color:#fff}
+
+/* hero */
+.hero{padding:72px 0 64px;display:flex;flex-direction:column;gap:32px}
+.stats{display:flex;flex-wrap:wrap;gap:16px;margin-top:8px}
+.stat{flex:1 1 220px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:22px 24px}
+.stat b{display:block;font-family:var(--display);font-size:44px;line-height:1;color:var(--teal)}
+.stat b.hot{color:var(--orange-text)}
+.stat span{display:block;margin-top:6px;font-size:14px;color:var(--muted);line-height:1.4}
+
+/* funnel */
+.head{margin-bottom:40px}
+.head h2{max-width:820px}
+.row-head{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;margin-bottom:20px}
+.tabs{display:flex;gap:8px}
+.tab{font:600 15px var(--body);min-height:44px;padding:10px 18px;border-radius:8px;cursor:pointer;background:transparent;color:var(--ink);border:2px solid var(--ink)}
+.tab[aria-pressed="true"]{background:var(--ink);color:#fff}
+.frow{display:flex;flex-wrap:wrap;align-items:center;gap:8px 20px;margin-bottom:12px}
+.flabel{flex:0 0 140px;font-size:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.fbarwrap{flex:1 1 280px;min-width:0}
+.fbar{height:64px;min-width:110px;margin:0 auto;border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:700;font-size:30px;color:#fff;transition:width .3s}
+.frate{flex:0 0 150px}
+.frate b{display:block;font-family:var(--display);font-size:26px;color:var(--ink)}
+.frate b.hot{color:var(--orange-text)}
+.frate span{font-size:13px;color:var(--muted)}
+.block{margin-top:56px}
+
+/* arr chart */
+.scroll{overflow-x:auto}
+.arr{min-width:680px}
+.bars{display:flex;align-items:flex-end;gap:14px;height:340px;border-bottom:2px solid var(--ink)}
+.col{flex:1 1 0;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:8px}
+.col .v{font-family:var(--display);font-weight:700;font-size:16px}
+.col .b{width:100%;border-radius:6px 6px 0 0;background:var(--teal)}
+.col.last .b{background:var(--orange)}
+.col.last .v{color:var(--orange-text)}
+.labels{display:flex;gap:14px;margin-top:12px}
+.labels div{flex:1 1 0;min-width:0;text-align:center}
+.labels b{display:block;font-size:14px;color:var(--ink)}
+.labels span{font-size:13px;color:var(--muted)}
+
+/* process */
+.group{margin-top:40px}
+.group h3{margin-bottom:16px}
+.steps{display:flex;flex-wrap:wrap;gap:16px}
+.step{flex:1 1 190px;border-top:6px solid var(--teal);padding-top:14px}
+.step.end{border-top-color:var(--orange)}
+.step b{display:block;font-size:17px;margin-bottom:8px}
+.step p{margin:0;font-size:15px;line-height:1.5}
+.cards3{display:flex;flex-wrap:wrap;gap:16px}
+.pcard{flex:1 1 260px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px 22px}
+.pcard b{display:block;font-size:17px;margin-bottom:8px}
+.pcard p{margin:0;font-size:15px;line-height:1.5}
+.note{margin:16px 0 0;font-size:15px;color:var(--muted)}
+
+/* marketing */
+.mk{display:flex;flex-wrap:wrap;gap:20px;align-items:stretch}
+.mcard{flex:1 1 320px;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:28px;display:flex;flex-direction:column;gap:14px}
+.mcard .dates{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.mcard h3{font-size:26px}
+.mcard .role{font-size:15px;color:var(--muted)}
+.mcard p{margin:0;font-size:15px;line-height:1.55}
+.mstats{display:flex;flex-wrap:wrap;gap:20px;padding:8px 0}
+.mstats b{display:block;font-family:var(--display);font-size:34px;line-height:1;color:var(--teal)}
+.mstats b.hot{color:var(--orange-text)}
+.mstats span{font-size:13px;color:var(--muted)}
+
+/* about */
+.about{display:flex;flex-wrap:wrap;gap:40px;align-items:flex-start}
+.photo{flex:0 1 260px;width:260px;height:300px;border:2px dashed #9A9578;border-radius:10px;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;font-size:14px;color:var(--muted)}
+.photo img{width:100%;height:100%;object-fit:cover;border-radius:8px}
+.about-text{flex:999 1 420px;min-width:0;display:flex;flex-direction:column;gap:16px}
+.about-text p{margin:0;font-size:17px;line-height:1.6}
+.path .step{border-top-color:var(--teal)}
+.path .step.bridge{border-top-color:var(--muted)}
+.path .step.now{border-top-color:var(--orange)}
+.path .step .when{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:4px}
+.path .step b{margin-bottom:4px}
+.path .step span.co{font-size:15px;color:var(--muted)}
+
+/* contact */
+.contact{background:var(--ink);color:#fff}
+.contact h2{color:#fff}
+.contact p{margin:0;max-width:640px;font-size:18px;line-height:1.55;color:#E3E0D2}
+.contact .btn.line{border-color:#fff;color:#fff;padding:12px 26px}
+.contact .btn.line:hover{background:#fff;color:var(--ink)}
+.contact .small{color:#BFC3CF}
+
+@media (max-width:560px){
+  section{padding:56px 0}
+  .flabel{flex-basis:100%}
+  .frate{flex-basis:100%}
+}
+</style>
+</head>
+<body>
+
+<header class="wrap nav">
+  <a class="brand" href="#top">Liam Hanvey</a>
+  <nav aria-label="Main">
+    <a href="#results">Results</a>
+    <a href="#process">How I work</a>
+    <a href="#marketing">Marketing</a>
+    <a href="#about">About</a>
+    <a class="cta" href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+<div class="wrap hero">
+  <p class="eyebrow" style="margin:0">Sales and marketing</p>
+  <h1>I build pipeline, and I close it.</h1>
+  <p class="lead">A marketing leader turned top-ranked outbound seller. I spent years generating demand, then moved into sales in 2024 to own revenue directly. Today I'm ranked #1 of 26 at CEO Coaching International, booking meetings and closing clients with CEOs of $25M–$500M companies, and I manage a team of 8 SDRs.</p>
+  <div class="btns">
+    <a class="btn primary" href="#results">See the results</a>
+    <a class="btn ghost" href="#contact">Get in touch</a>
+  </div>
+  <div class="stats">
+    <div class="stat"><b class="hot">~$1.2M</b><span>in annual recurring revenue closed</span></div>
+    <div class="stat"><b>#1 of 26</b><span>on the business development team</span></div>
+    <div class="stat"><b>281</b><span>meetings booked with CEOs from cold calls</span></div>
+    <div class="stat"><b>8</b><span>part-time SDRs managed, using scripts I wrote</span></div>
+  </div>
+</div>
+
+<!-- RESULTS -->
+<section id="results" class="band">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Results</p>
+      <h2>Activity that turns into meetings, and meetings that turn into clients.</h2>
+    </div>
+
+    <div class="row-head">
+      <h3>Outbound call funnel</h3>
+      <div class="tabs">
+        <button class="tab" id="tab-all" aria-pressed="true" type="button">All time</button>
+        <button class="tab" id="tab-ytd" aria-pressed="false" type="button">Year to date</button>
+      </div>
+    </div>
+    <div id="funnel"></div>
+    <p class="small">Source: Orum analytics, rep performance. Calls only; email not included. Bars not to scale. Year to date covers Jan 5 – Nov 11, 2026.</p>
+
+    <div class="block">
+      <h3>16 clients closed, ~$1.2M in ARR</h3>
+      <p style="margin:6px 0 20px;font-size:16px;color:var(--muted)">Cumulative annual recurring revenue by quarter, Aug 2024 – Oct 2026. Numbers under each quarter are new clients closed.</p>
+      <div class="scroll"><div class="arr">
+        <div class="bars" id="bars"></div>
+        <div class="labels" id="labels"></div>
+      </div></div>
+      <p class="small" style="margin-top:16px">Source: CRM closed-won report, deals paid out on commission; client names removed. ARR = monthly fee × 12. Q4 2026 runs through Oct 27.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">How I work</p>
+      <h2>From a cold list to a closed client.</h2>
+    </div>
+
+    <div class="group" style="margin-top:0">
+      <h3>1. Prospect</h3>
+      <div class="steps">
+        <div class="step"><b>Find</b><p>CEOs with a healthy online presence.</p></div>
+        <div class="step"><b>Check tenure</b><p>How long they've been in the role.</p></div>
+        <div class="step"><b>Gauge openness</b><p>Do they own the business? Owners are the clearest signal.</p></div>
+        <div class="step"><b>Confirm fit</b><p>Employee size and ICP match: $25M–$500M companies.</p></div>
+        <div class="step end"><b>Load</b><p>Export the list and add each CEO to a cadence.</p></div>
+      </div>
+      <p class="note">In parallel, I work the CRM for low-hanging fruit and re-engagements.</p>
+    </div>
+
+    <div class="group">
+      <h3>2. Get the meeting</h3>
+      <div class="cards3">
+        <div class="pcard"><b>Open</b><p>Circle back to earlier outreach and ask for 10 minutes. Once they say yes, remind them what it was about, then let the script guide the conversation.</p></div>
+        <div class="pcard"><b>Follow up</b><p>About 100 emails a week, each prospect dripped across 4 emails. If they don't answer, about 9 touchpoints across calls, email and LinkedIn.</p></div>
+        <div class="pcard"><b>Handle objections</b><p>No interest, already have a coach, not a good time, retiring soon. I wrote the script and rebuttals the whole team uses.</p></div>
+      </div>
+    </div>
+
+    <div class="group">
+      <h3>3. From meeting to close</h3>
+      <div class="steps">
+        <div class="step"><b>Book the meeting</b><p>Discovery on their 6-month goals, 3-year goals, and what would make a good coach.</p></div>
+        <div class="step"><b>Recommend coaches</b><p>Match on industry, goals and succession planning from a roster of 90.</p></div>
+        <div class="step"><b>Set the sessions</b><p>Two complimentary one-hour coaching sessions.</p></div>
+        <div class="step"><b>Sessions held</b><p>The CEO meets the coaches and experiences the coaching firsthand.</p></div>
+        <div class="step end"><b>Feedback and close</b><p>Gather their feedback, then run the closing call.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARKETING -->
+<section id="marketing" class="band">
+  <div class="wrap">
+    <div class="head">
+      <p class="eyebrow">Marketing foundation</p>
+      <h2>Years of generating demand, before I started closing it.</h2>
+    </div>
+    <div class="mk">
+
+      <article class="mcard">
+        <div class="dates">Nov 2020 – Oct 2022</div>
+        <h3>Compulink Technologies</h3>
+        <div class="role">Digital Marketing Manager</div>
+        <div class="mstats">
+          <div><b class="hot">41%</b><span>sales revenue growth</span></div>
+          <div><b>15%</b><span>more partner revenue</span></div>
+          <div><b>30%</b><span>more inbound inquiries</span></div>
+        </div>
+        <p>Built email campaigns, landing pages and webinars with Cisco, Microsoft, Red Hat, HP and Dell, aimed at public-sector and small-business buyers in New York City, including Queens College and the Port Authority.</p>
+        <p>Rebuilt an outdated website within my first month, with SEO, new team photography and pages for each core offering. It added 2,000+ monthly visits.</p>
+      </article>
+
+      <article class="mcard">
+        <div class="dates">Oct 2022 – Oct 2023</div>
+        <h3>POCUS Certification Academy</h3>
+        <div class="role">Marketing Director</div>
+        <div class="mstats">
+          <div><b class="hot">28%</b><span>more qualified leads</span></div>
+          <div><b>38%</b><span>open rate</span></div>
+          <div><b>14%</b><span>click-through rate</span></div>
+        </div>
+        <p>Ran nurture campaigns to 14,000 subscribers: practitioners, nurses, students and other healthcare workers being trained in point-of-care ultrasound.</p>
+        <p>Reviewed the funnel, campaigns and channel attribution every quarter, and improved marketing ROI by 22%.</p>
+      </article>
+
+      <article class="mcard">
+        <div class="dates">2018 – 2020</div>
+        <h3>Dolo Digital</h3>
+        <div class="role">Marketing Coordinator</div>
+        <div class="mstats">
+          <div><b class="hot">25%</b><span>avg. organic traffic lift</span></div>
+          <div><b>7</b><span>client websites built</span></div>
+        </div>
+        <p>Built each site in WordPress with Divi and Elementor. Worked with the marketing team on video, photos and blogs, used the blog pages to drive search traffic, and polished each final site with the client.</p>
+        <p>Also implemented and managed the agency's CRM.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="about">
+      <!-- To add your headshot: replace this div's text with <img src="headshot.jpg" alt="Liam Hanvey"> -->
+      <div class="photo">Add your headshot here</div>
+      <div class="about-text">
+        <p class="eyebrow" style="margin:0">About</p>
+        <h2>I understand the whole funnel, because I've worked every part of it.</h2>
+        <p>I started in marketing, running campaigns, websites and email programs, and spent years learning what makes a buyer pay attention. In 2024 I moved into sales to own the revenue side directly.</p>
+        <p>At CEO Coaching International, I cold-call CEOs, run discovery, match them with coaches and close. I'm ranked #1 of 26, and I now manage 8 SDRs using the scripts and objection handling I wrote.</p>
+      </div>
+    </div>
+
+    <div class="group path">
+      <h3>Career path</h3>
+      <div class="steps">
+        <div class="step"><span class="when">2018 – 2020</span><b>Marketing Coordinator</b><span class="co">Dolo Digital</span></div>
+        <div class="step"><span class="when">2020 – 2022</span><b>Digital Marketing Manager</b><span class="co">Compulink Technologies</span></div>
+        <div class="step"><span class="when">2022 – 2023</span><b>Marketing Director</b><span class="co">POCUS Certification Academy</span></div>
+        <div class="step bridge"><span class="when">2023 – 2024</span><b>Sales and Marketing Consultant</b><span class="co">WP-Wiz</span></div>
+        <div class="step now"><span class="when">2024 – present</span><b>Business Development, then team manager</b><span class="co">CEO Coaching International</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="wrap" style="display:flex;flex-direction:column;gap:24px">
+    <h2>Let's talk.</h2>
+    <p>If you're hiring for a role that mixes sales and marketing, I'd like to hear about it.</p>
+    <div class="btns">
+      <!-- Replace YOUR_EMAIL and YOUR_LINKEDIN_URL with your real details -->
+      <a class="btn primary" href="mailto:YOUR_EMAIL">Email me</a>
+      <a class="btn line" href="YOUR_LINKEDIN_URL">LinkedIn</a>
+    </div>
+    <div class="small">© 2026 Liam Hanvey</div>
+  </div>
+</section>
+
+</main>
+
+<script>
+(function () {
+  var funnels = {
+    all: [
+      ['Dials', '50,040', '', '', 100, '#0B3C49'],
+      ['Connects', '3,941', '7.42%', 'dial to connect', 72, '#0F5A6B'],
+      ['Conversations', '1,385', '35.14%', 'connect to conversation', 47, '#14788F'],
+      ['Meetings', '281', '20.29%', 'conversation to meeting', 28, '#C2410C']
+    ],
+    ytd: [
+      ['Dials', '19,153', '', '', 100, '#0B3C49'],
+      ['Connects', '1,831', '9.10%', 'dial to connect', 72, '#0F5A6B'],
+      ['Conversations', '707', '38.61%', 'connect to conversation', 47, '#14788F'],
+      ['Meetings', '149', '21.07%', 'conversation to meeting', 28, '#C2410C']
+    ]
+  };
+
+  var funnelEl = document.getElementById('funnel');
+  var tabAll = document.getElementById('tab-all');
+  var tabYtd = document.getElementById('tab-ytd');
+
+  function renderFunnel(key) {
+    var html = '';
+    funnels[key].forEach(function (r, i) {
+      html += '<div class="frow">' +
+        '<div class="flabel">' + r[0] + '</div>' +
+        '<div class="fbarwrap"><div class="fbar" style="width:' + r[4] + '%;background:' + r[5] + '">' + r[1] + '</div></div>' +
+        '<div class="frate">' + (r[2] ? '<b class="' + (i === 3 ? 'hot' : '') + '">' + r[2] + '</b><span>' + r[3] + '</span>' : '') + '</div>' +
+        '</div>';
+    });
+    funnelEl.innerHTML = html;
+    tabAll.setAttribute('aria-pressed', key === 'all');
+    tabYtd.setAttribute('aria-pressed', key === 'ytd');
+  }
+  tabAll.addEventListener('click', function () { renderFunnel('all'); });
+  tabYtd.addEventListener('click', function () { renderFunnel('ytd'); });
+  renderFunnel('all');
+
+  var q = [
+    ['Q3 ’24', '$60K', 18, '+1'],
+    ['Q4 ’24', '$60K', 18, 'none'],
+    ['Q1 ’25', '$385K', 115, '+4'],
+    ['Q2 ’25', '$520K', 156, '+2'],
+    ['Q3 ’25', '$620K', 186, '+1'],
+    ['Q4 ’25', '$620K', 186, 'none'],
+    ['Q1 ’26', '$752K', 226, '+2'],
+    ['Q2 ’26', '$986K', 296, '+3'],
+    ['Q3 ’26', '$1.13M', 340, '+2'],
+    ['Q4 ’26*', '$1.2M', 360, '+1']
+  ];
+  var bars = '', labels = '';
+  q.forEach(function (r, i) {
+    bars += '<div class="col' + (i === 9 ? ' last' : '') + '"><div class="v">' + r[1] + '</div><div class="b" style="height:' + Math.round(r[2] * 0.78) + 'px"></div></div>';
+    labels += '<div><b>' + r[0] + '</b><span>' + r[3] + '</span></div>';
+  });
+  document.getElementById('bars').innerHTML = bars;
+  document.getElementById('labels').innerHTML = labels;
+})();
+</script>
+</body>
+</html>
